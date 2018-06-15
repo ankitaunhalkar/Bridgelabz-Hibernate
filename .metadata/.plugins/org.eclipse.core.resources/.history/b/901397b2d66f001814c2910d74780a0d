@@ -1,0 +1,40 @@
+package com.bridgelabz.main;
+
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.bridgelabz.model.Employee;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Employee emp = new Employee();
+        
+    	Configuration config = new Configuration(); //configuration object, created only once
+        
+        config.configure("hibernate.cfg.xml"); //populates the data of the configuration file
+        
+        SessionFactory sf = config.buildSessionFactory(); //sessionfactory object
+        
+        Session session = sf.openSession(); //session object
+        
+//      session.beginTransaction();
+        Transaction t = session.beginTransaction();
+        
+        emp.setName("Ankita");
+        emp.setCity("Mumbai");
+        
+        session.save(emp);
+        
+        //session.getTransaction().commit();
+        t.commit();
+    }
+}

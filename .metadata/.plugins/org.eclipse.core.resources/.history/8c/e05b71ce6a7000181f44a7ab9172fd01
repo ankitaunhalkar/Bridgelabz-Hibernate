@@ -1,0 +1,17 @@
+package com.bridgelabz.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class Customer {
+
+	private int id;
+	
+	private String name;
+	
+	private String city;
+	
+	
+}

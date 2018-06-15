@@ -1,0 +1,53 @@
+package com.bridgelabz.main;
+
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.bridgelabz.model.Emp;
+import com.bridgelabz.util.HibernateUtil;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Emp emp = new Emp();
+        
+        //Cause of these it reduces performance. For every client request it will create new sessionfactory object
+    	/*
+    	 * Configuration config = new Configuration(); //configuration object, created only once
+        
+        config.configure("hibernate.cfg.xml"); //populates the data of the configuration file
+        
+        SessionFactory sf = config.buildSessionFactory(); //sessionfactory object
+       
+        
+        Session session = sf.openSession(); //session object
+         */
+        
+        
+       //By using separate sessionfactory creation singleton class it will not effect the performs, sessionfactory object will be created only once. 
+    
+        /* SessionFactory sf = HibernateUtil.getSessionFactory();
+        SessionFactory sf1 = HibernateUtil.getSessionFactory();
+
+        System.out.println(sf.hashCode());
+        System.out.println(sf1.hashCode());*/
+        
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        
+//      session.beginTransaction();
+        Transaction t = session.beginTransaction();
+        
+        emp.setName("Ankita");
+        emp.setCity("Mumbai");
+        
+        session.save(emp);
+        
+        //session.getTransaction().commit();
+        t.commit();
+        
+        session.close();
+        System.out.println("Successful");
+    }
+}

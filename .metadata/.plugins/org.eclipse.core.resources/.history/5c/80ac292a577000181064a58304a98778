@@ -1,0 +1,14 @@
+package com.bridgelabz.util;
+
+import org.hibernate.SessionFactory;
+
+public class HibernateUtil {
+	
+	private static final SessionFactory sessionfactory = buildSessionFactory();
+	
+	private static SessionFactory buildSessionFactory() {
+
+		
+		return null;
+	}
+}

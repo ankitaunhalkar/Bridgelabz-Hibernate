@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+/home/bridgeit/eclipse-workspace/hibernate/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2099353878.index
+1152612537.index
+1685968849.index
+2373349319.index
+3689398536.index
