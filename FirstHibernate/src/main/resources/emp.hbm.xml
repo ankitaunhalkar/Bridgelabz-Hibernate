@@ -3,7 +3,7 @@
 "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="com.bridgelabz.model.Emp" table="emp">
+	<class name="com.bridgelabz.model.Emp" table="emp1">
 	<id name="id" type="java.lang.String">
 		<generator class="uuid"></generator>
 	</id>

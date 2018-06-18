@@ -1,8 +1,8 @@
-#Fri Jun 15 11:00:51 IST 2018
+#Mon Jun 18 09:14:47 IST 2018
 l=Project example name
 ct=examples
-d=1529040651760
-c=1
+d=1529293487048
+c=0
 cmp=examples
 a=create
 cl=org.wildfly.archetype\:wildfly-javaee7-webapp-archetype\:8.2.0.Final

@@ -14,5 +14,13 @@
   <Memento type="FileHibConfig3">
    <Memento type="File Hibernate Configuration 3.0"/>
   </Memento>
+  <Memento type="">
+   <Memento type="Properties Editor"/>
+  </Memento>
+  <Memento type="HibConfig3SessionFactory">
+   <Memento type="Session Factory"/>
+   <Memento type="Properties"/>
+   <Memento type="Mappings"/>
+  </Memento>
  </TreeFormPage>
 </Layout>

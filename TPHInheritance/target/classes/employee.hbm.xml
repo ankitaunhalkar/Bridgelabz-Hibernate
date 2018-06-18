@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.bridgelabz.model.Employee" table="hierarchy" discriminator-value="emp">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		
+		<discriminator column="type" type="string"></discriminator>
+		<property name="name"></property>
+	
+		<subclass name="com.bridgelabz.model.RegularEmployee" discriminator-value="regular">
+			<property name="salary"></property>
+			<property name="bonus"></property>
+		</subclass>
+		
+		<subclass name="com.bridgelabz.model.ContractEmployee" discriminator-value="contract">
+			<property name="pay_per_hour"></property>
+			<property name="contract_period"></property>
+		</subclass>
+	</class>
+	
+</hibernate-mapping>

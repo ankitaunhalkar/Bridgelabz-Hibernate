@@ -32,7 +32,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item value="All Catalogs" key="catalog"/>
+		<item value="internal" key="catalog"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -44,6 +44,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/eclipse-workspace/hibernate/TPCInheritance"/>
+			<item value="/home/bridgeit/eclipse-workspace/hibernate/Annotations"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -56,13 +58,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.bridgelabz.example.FirstHibernate"/>
+			<item value="com.bridgelabz.TPSinheritance"/>
 		</list>
 		<list key="groupId">
-			<item value="com.bridgelabz.example"/>
+			<item value="com.bridgelabz"/>
 		</list>
 		<list key="artifactId">
-			<item value="FirstHibernate"/>
+			<item value="TPSinheritance"/>
+			<item value="TPCInheritance"/>
+			<item value="Inheritance"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

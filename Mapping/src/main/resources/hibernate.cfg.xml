@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+<session-factory>
+
+	<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property> 
+	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+	<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mapping</property>
+	<property name="hibernate.connection.username">root</property>
+	<property name="hibernate.connection.password">bridgeit</property>
+	<property name="hbm2ddl.auto">update</property>
+	<property name="hibernate.show_sql">true</property>
+	
+	<!-- One To One mapping -->
+	<!-- <mapping class="com.bridgelabz.one2one.Car" />
+	<mapping class="com.bridgelabz.one2one.Engine"/> -->
+	
+	<!-- One To Many mapping -->
+	<!-- <mapping class="com.bridgelabz.one2many.Movie" />
+	<mapping class="com.bridgelabz.one2many.Actor"/> -->
+	
+	<!-- Many To One Mapping -->
+	<!-- <mapping class = "com.bridgelabz.many2one.Vendor"/>
+	<mapping class = "com.bridgelabz.many2one.Customer"/> -->
+	
+	<!-- Many To Many Mapping -->
+	<mapping class = "com.bridgelabz.many2many.Course"/>
+	<mapping class = "com.bridgelabz.many2many.Student"/>
+	
+</session-factory>
+
+</hibernate-configuration>
+
