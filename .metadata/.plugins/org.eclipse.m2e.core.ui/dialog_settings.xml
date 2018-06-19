@@ -44,6 +44,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/eclipse-workspace/hibernate/TPSinheritance"/>
 			<item value="/home/bridgeit/eclipse-workspace/hibernate/TPCInheritance"/>
 			<item value="/home/bridgeit/eclipse-workspace/hibernate/Annotations"/>
 		</list>
@@ -64,6 +65,7 @@
 			<item value="com.bridgelabz"/>
 		</list>
 		<list key="artifactId">
+			<item value="Mapping"/>
 			<item value="TPSinheritance"/>
 			<item value="TPCInheritance"/>
 			<item value="Inheritance"/>

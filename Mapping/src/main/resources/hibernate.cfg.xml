@@ -15,20 +15,20 @@
 	<property name="hibernate.show_sql">true</property>
 	
 	<!-- One To One mapping -->
-	<!-- <mapping class="com.bridgelabz.one2one.Car" />
-	<mapping class="com.bridgelabz.one2one.Engine"/> -->
+	<!--  <mapping class="com.bridgelabz.one2one.Car" />
+	<mapping class="com.bridgelabz.one2one.Engine"/>  -->
 	
 	<!-- One To Many mapping -->
-	<!-- <mapping class="com.bridgelabz.one2many.Movie" />
-	<mapping class="com.bridgelabz.one2many.Actor"/> -->
+	 <mapping class="com.bridgelabz.one2many.Movie" />
+	<mapping class="com.bridgelabz.one2many.Actor"/>
 	
 	<!-- Many To One Mapping -->
-	<!-- <mapping class = "com.bridgelabz.many2one.Vendor"/>
-	<mapping class = "com.bridgelabz.many2one.Customer"/> -->
+	 <mapping class = "com.bridgelabz.many2one.Vendor"/>
+	<mapping class = "com.bridgelabz.many2one.Customer"/>
 	
 	<!-- Many To Many Mapping -->
-	<mapping class = "com.bridgelabz.many2many.Course"/>
-	<mapping class = "com.bridgelabz.many2many.Student"/>
+	 <mapping class = "com.bridgelabz.many2many.Course"/>
+	<mapping class = "com.bridgelabz.many2many.Student"/> 
 	
 </session-factory>
 

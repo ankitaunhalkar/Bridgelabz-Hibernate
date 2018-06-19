@@ -7,7 +7,7 @@ import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 	@Entity
-	@Table(name = "executivetps")
+	@Table(name = "executivetps1")
 	@PrimaryKeyJoinColumn(name="Id")  
 	public class Executive extends Employee{
 

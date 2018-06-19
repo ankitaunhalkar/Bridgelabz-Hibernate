@@ -7,7 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "executivetcp")
+@Table(name = "executivetpc1")
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id")),
 		@AttributeOverride(name = "name", column = @Column(name = "name")) })
 public class Executive extends Employee{

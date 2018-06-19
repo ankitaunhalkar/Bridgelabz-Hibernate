@@ -10,7 +10,7 @@
 	import javax.persistence.Table;
 
 	@Entity
-	@Table(name = "emptps")
+	@Table(name = "emptps1")
 	@Inheritance(strategy = InheritanceType.JOINED)
 	public class Employee {
 
