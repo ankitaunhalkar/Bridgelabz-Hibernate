@@ -27,8 +27,10 @@
 		<list key="ciManagementSystem">
 		</list>
 		<list key="issueManagementSystem">
+			<item value="jira"/>
 		</list>
 		<list key="issueManagementUrl">
+			<item value="https://hibernate.atlassian.net/browse/HHH"/>
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
@@ -44,9 +46,9 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/eclipse-workspace/hibernate/Annotations"/>
 			<item value="/home/bridgeit/eclipse-workspace/hibernate/TPSinheritance"/>
 			<item value="/home/bridgeit/eclipse-workspace/hibernate/TPCInheritance"/>
-			<item value="/home/bridgeit/eclipse-workspace/hibernate/Annotations"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -59,12 +61,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.bridgelabz.Caching"/>
 			<item value="com.bridgelabz.TPSinheritance"/>
 		</list>
 		<list key="groupId">
 			<item value="com.bridgelabz"/>
 		</list>
 		<list key="artifactId">
+			<item value="Caching"/>
 			<item value="Mapping"/>
 			<item value="TPSinheritance"/>
 			<item value="TPCInheritance"/>

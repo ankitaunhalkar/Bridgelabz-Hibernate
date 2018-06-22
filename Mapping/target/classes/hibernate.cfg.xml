@@ -15,11 +15,11 @@
 	<property name="hibernate.show_sql">true</property>
 	
 	<!-- One To One mapping -->
-	<!--  <mapping class="com.bridgelabz.one2one.Car" />
-	<mapping class="com.bridgelabz.one2one.Engine"/>  -->
+	<mapping class="com.bridgelabz.one2one.Car" />
+	<mapping class="com.bridgelabz.one2one.Engine"/>  
 	
 	<!-- One To Many mapping -->
-	 <mapping class="com.bridgelabz.one2many.Movie" />
+	<mapping class="com.bridgelabz.one2many.Movie" />
 	<mapping class="com.bridgelabz.one2many.Actor"/>
 	
 	<!-- Many To One Mapping -->
